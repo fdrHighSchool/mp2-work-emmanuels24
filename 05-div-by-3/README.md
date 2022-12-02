@@ -5,12 +5,11 @@
 Outline an algorithm to determine whether or not a number is prime.  
 Think of the following method header:
 public static boolean isPrime(int num) {
- if (num % 2 != 0) {
-  if (num % 3 == 0 || num % 5 == 0 || num % 7 == 0 || num % 11 == 0) {
-   return true;
+    if (num % 2 == 0) {
+      return false;
+    }
+    else {
+      return num % 3 != 0 || num % 5 != 0 || num % 7 != 0 || num % 11 != 0;
+    }
   }
- }
- else {
-  return false;
- }
 }
